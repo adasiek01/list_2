@@ -1,12 +1,50 @@
-def pitagoras(o):
-    o = (int(input("Enter the perimeter of a triangle: ")))
-    for a in range(1, o):
-        for b in range(1, o):
-            for c in range(1, o):
-                if a**2 + b**2 == c**2 and a + b + c == o:
+def pitagoras(x):
+    x = (int(input("Enter the perimeter of a triangle: ")))
+    for a in range(1, x):
+        for b in range(1, x):
+            for c in range(1, x):
+                if a**2 + b**2 == c**2 and a + b + c == x:
                     return a, b, c
     else:
-        return "There is no pythagorean triple whose sum is: " + str(o)
+        return "There is no pythagorean triple whose sum is: " + str(x)
 
 
-print(pitagoras(""))
+def pitagoras_2(x):
+    x = (int(input("Enter the perimeter of a triangle: ")))
+    for a in range(1, x):
+        for b in range(1, x):
+            for c in range(1, int(x/2)):
+                """
+                a + b > c
+                so 'c' can not be bigger than half the circumference
+                """
+                if a**2 + b**2 == c**2 and a + b + c == x:
+                    return a, b, c
+    else:
+        return "There is no pythagorean triple whose sum is: " + str(x)
+
+
+def pitagoras_3(x):
+    x = (int(input("Enter the perimeter of a triangle: ")))
+    for a in range(1, x):
+        for b in range(1, x):
+            c = x - a - b
+            if a**2 + b**2 == c**2 and a + b + c == x:
+                return a, b, c
+    else:
+        return "There is no pythagorean triple whose sum is: " + str(x)
+
+
+def pitagoras_4(x):
+    x = (int(input("Enter the perimeter of a triangle: ")))
+    """
+    a + b + c = x
+    a**2 + b**2 = c**2
+    operations on patterns
+    b = (x - c + (a-b))/2
+    a = x - c -b
+    """
+
+
+if __name__ == "__main__":
+    print(pitagoras_3(""))
