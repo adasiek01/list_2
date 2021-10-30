@@ -209,7 +209,7 @@ def pitagoras_v5_short(l):
     min_c = int(l/3)+1
     max_c = math.ceil(l/2)
     counter = 3
-    for c in range (min_c,max_c):
+    for c in range(min_c, max_c):
         a_b_square = c**2 - l**2 + 2*l*c
         counter += 7
         if a_b_square > 0:
@@ -230,11 +230,13 @@ def pitagoras_v5_short(l):
     
 
 if __name__ == "__main__":
-    print(pitagoras_v0(12))
-    print(pitagoras_v1(12))
-    print(pitagoras_v2(12))
-    print(pitagoras_v3(12))
-    print(pitagoras_v4(12))
-    print(pitagoras_v4_sh(12))
-    print(pitagoras_v5(12))
-    print(pitagoras_v5_short(12))
+    """
+    print(pitagoras_v0(176))
+    print(pitagoras_v1(176))
+    print(pitagoras_v2(176))
+    print(pitagoras_v3(176))
+    print(pitagoras_v4(176))
+    print(pitagoras_v4_sh(176))
+    print(pitagoras_v5(176))
+    print(pitagoras_v5_short(176))
+    """
