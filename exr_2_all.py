@@ -26,6 +26,11 @@ def pitagoras_v0(l):
 
 
 def pitagoras_v1(l):
+    """
+    Function that finds pythagorean triples
+    :param l: perimeter of a triangle
+    :return: pythagorean triple, time of work, number of operations
+    """
     triangles = []
     start_time = time.time()
     triangle_condition = math.ceil(l/2)
@@ -45,6 +50,11 @@ def pitagoras_v1(l):
 
 
 def pitagoras_v2(l):
+    """
+    Function that finds pythagorean triples
+    :param l: perimeter of a triangle
+    :return: pythagorean triple, time of work, number of operations
+    """
     triangles = []
     start_time = time.time()
     triangle_condition = math.ceil(l/2)
@@ -64,6 +74,11 @@ def pitagoras_v2(l):
 
 
 def pitagoras_v3(l):
+    """
+    Function that finds pythagorean triples
+    :param l: perimeter of a triangle
+    :return: pythagorean triple, time of work, number of operations
+    """
     triangles = []
     start_time = time.time()
     triangle_condition = math.ceil(l/2)
@@ -85,7 +100,11 @@ def pitagoras_v3(l):
 
 
 def pitagoras_v4(l):
-
+    """
+    Function that finds pythagorean triples
+    :param l: perimeter of a triangle
+    :return: pythagorean triple, time of work, number of operations
+    """
     triangles = []
     start_time = time.time()
     triangle_condition = math.ceil(l/2)
@@ -121,6 +140,11 @@ def pitagoras_v4(l):
 
 
 def pitagoras_v4_sh(l):
+    """
+    Function that finds pythagorean triples
+    :param l: perimeter of a triangle
+    :return: pythagorean triple, time of work, number of operations
+    """
     triangles = []
     start_time = time.time()
     triangle_condition = math.ceil(l/2)
@@ -145,6 +169,11 @@ def pitagoras_v4_sh(l):
 
 
 def pitagoras_v5(l):
+    """
+    Function that finds pythagorean triples
+    :param l: perimeter of a triangle
+    :return: pythagorean triple, time of work, number of operations
+    """
     triangles = []
     start_time = time.time()
     min_c = int(l/3)+1
@@ -170,6 +199,11 @@ def pitagoras_v5(l):
 
 
 def pitagoras_v5_short(l):
+    """
+    Function that finds pythagorean triples
+    :param l: perimeter of a triangle
+    :return: pythagorean triple, time of work, number of operations
+    """
     start_time = time.time()
     check = 1
     min_c = int(l/3)+1
