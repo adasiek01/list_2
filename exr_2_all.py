@@ -232,7 +232,7 @@ def pitagoras_v5_short(l):
     
 
 if __name__ == "__main__":
-    
+    """
     print(pitagoras_v0(176))
     print(pitagoras_v1(176))
     print(pitagoras_v2(176))
@@ -241,4 +241,4 @@ if __name__ == "__main__":
     print(pitagoras_v4_sh(176))
     print(pitagoras_v5(176))
     print(pitagoras_v5_short(176))
-    
+    """
