@@ -20,9 +20,9 @@ def pitagoras_v0(l):
                     triangles.append(triangle)
     end_time = time.time()
     if len(triangles) != 0:
-        return True, triangles, end_time - start_time, counter
+        return True, triangles, counter, end_time - start_time
     else: 
-        return False, end_time - start_time, counter
+        return False, (-1,-1,-1), counter, end_time - start_time
 
 
 def pitagoras_v1(l):
@@ -44,9 +44,9 @@ def pitagoras_v1(l):
                     triangles.append(triangle)
     end_time = time.time()
     if len(triangles) != 0:
-        return True, triangles, end_time - start_time, counter
+        return True, triangles, counter, end_time - start_time
     else: 
-        return False, end_time - start_time, counter
+        return False, (-1,-1,-1), counter, end_time - start_time
 
 
 def pitagoras_v2(l):
@@ -68,9 +68,9 @@ def pitagoras_v2(l):
                 triangles.append(triangle)
     end_time = time.time()
     if len(triangles) != 0:
-        return True, triangles, end_time - start_time, counter
+        return True, triangles, counter, end_time - start_time
     else: 
-        return False, end_time - start_time, counter
+        return False, (-1,-1,-1), counter, end_time - start_time
 
 
 def pitagoras_v3(l):
@@ -84,8 +84,9 @@ def pitagoras_v3(l):
     triangle_condition = math.ceil(l/2)
     counter = 1
     for a in range(1, triangle_condition):
+        counter += 1
         for b in range(a+1, triangle_condition):
-            counter += 7
+            counter += 6
             if math.sqrt(a**2+b**2) % 1 == 0:
                 counter += 7
                 if a**2 + b**2 == (l-a-b)**2:
@@ -94,9 +95,9 @@ def pitagoras_v3(l):
                     triangles.append(triangle)
     end_time = time.time()
     if len(triangles) != 0:
-        return True, triangles, end_time - start_time, counter
+        return True, triangles, counter, end_time - start_time
     else: 
-        return False, end_time - start_time, counter
+        return False, (-1,-1,-1), counter, end_time - start_time
 
 
 def pitagoras_v4(l):
@@ -111,7 +112,7 @@ def pitagoras_v4(l):
     max_of_short = int(l/3)
     counter = 2
     for a in range(1, max_of_short):
-        
+        counter += 1 
         for b in range(a+1, triangle_condition):
 
             """
@@ -134,9 +135,9 @@ def pitagoras_v4(l):
         
     end_time = time.time()
     if len(triangles) != 0:
-        return True, triangles, end_time - start_time, counter
+        return True, triangles, counter, end_time - start_time
     else: 
-        return False, end_time - start_time, counter
+        return False, (-1,-1,-1), counter, end_time - start_time
 
 
 def pitagoras_v4_sh(l):
@@ -151,6 +152,7 @@ def pitagoras_v4_sh(l):
     max_of_short = int(l/3)
     counter = 2
     for a in range(1, max_of_short):
+        counter += 1 
         for b in range(a+1, triangle_condition):
             square_sum = a**2+b**2
             counter += 6
@@ -163,9 +165,9 @@ def pitagoras_v4_sh(l):
                      
     end_time = time.time()
     if len(triangles) != 0:
-        return True, triangles, end_time - start_time, counter
+        return True, triangles, counter, end_time - start_time
     else: 
-        return False, end_time - start_time, counter
+        return False, (-1,-1,-1), counter, end_time - start_time
 
 
 def pitagoras_v5(l):
@@ -193,9 +195,9 @@ def pitagoras_v5(l):
                 triangles.append(triangle)
     end_time = time.time()
     if len(triangles) != 0:
-        return True, triangles, end_time - start_time, counter
+        return True, triangles, counter, end_time - start_time
     else: 
-        return False, end_time - start_time, counter
+        return False, (-1,-1,-1), counter, end_time - start_time
 
 
 def pitagoras_v5_short(l):
@@ -221,16 +223,16 @@ def pitagoras_v5_short(l):
                 check = 1
                 counter += 5
                 end_time = time.time()
-                return True, (a, b, c), end_time - start_time, counter
+                return True, (a, b, c), counter, end_time - start_time
             else:
                 check = 0
     end_time = time.time()
     if check == 0:
-        return False, end_time - start_time, counter
+        return False, (-1,-1,-1), counter, end_time - start_time
     
 
 if __name__ == "__main__":
-    """
+    
     print(pitagoras_v0(176))
     print(pitagoras_v1(176))
     print(pitagoras_v2(176))
@@ -239,4 +241,4 @@ if __name__ == "__main__":
     print(pitagoras_v4_sh(176))
     print(pitagoras_v5(176))
     print(pitagoras_v5_short(176))
-    """
+    
