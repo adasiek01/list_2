@@ -242,3 +242,4 @@ if __name__ == "__main__":
     print(pitagoras_v5(176))
     print(pitagoras_v5_short(176))
     """
+    print(pitagoras_v5_short(1000))
