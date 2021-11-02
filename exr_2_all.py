@@ -233,12 +233,12 @@ def pitagoras_v5_short(m):
 
 if __name__ == "__main__":
     """
-    print(pitagoras_v0(35))
-    print(pitagoras_v1(35))
-    print(pitagoras_v2(35))
-    print(pitagoras_v3(35))
-    print(pitagoras_v4(35))
-    print(pitagoras_v4_sh(35))
-    print(pitagoras_v5(35))
-    print(pitagoras_v5_short(35))
+    print(pitagoras_v0(176))
+    print(pitagoras_v1(176))
+    print(pitagoras_v2(176))
+    print(pitagoras_v3(176))
+    print(pitagoras_v4(176))
+    print(pitagoras_v4_sh(176))
+    print(pitagoras_v5(176))
+    print(pitagoras_v5_short(176))
     """
